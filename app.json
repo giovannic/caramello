@@ -17,9 +17,9 @@
     "art",
     "fashion"
   ],
-  "website": "https://caramello.com",
+  "website": "https://caramello.herokuapp.com",
   "repository": "https://github.com/giovannic/caramello",
-  "logo": "http://caramello.com/images/logo-128.png",
+  "logo": "http://caramello.herokuapp.com/images/logo.png",
   "env" : {
     "NODE_ENV": "production",
     "COOKIE_SECRET": {
