@@ -55,11 +55,14 @@ html
               span.icon-bar
               span.icon-bar
               span.icon-bar
-            a.navbar-brand(href='/') KeystoneJS
+
           .collapse.navbar-collapse
-            ul.nav.navbar-nav
+            ul.nav.navbar-nav.col-xs-12
               each link in navLinks
-                li(class=(section == link.key ? 'active' : null), class=link.key + '-icon'): a(href=link.href)= link.label
+                li(class=(section == link.key ? 'active' : null) class='col-xs-2')
+                  a(href=link.href)
+                    div(class=link.key + '-icon icon')
+                    p(class="icon-text")=link.label
 
     //- BODY
     #body
