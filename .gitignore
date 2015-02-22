@@ -32,3 +32,6 @@ node_modules
 
 # Art files
 art
+
+# Bower
+public/bower_components

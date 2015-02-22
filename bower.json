@@ -1,0 +1,20 @@
+{
+  "name": "caramello",
+  "version": "0.0.0",
+  "authors": [
+    "Giovanni Charles <giovanni.charles@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "imagesloaded": "~3.1.8",
+    "masonry": "~3.2.2"
+  }
+}
