@@ -29,9 +29,9 @@
 }
 
 .post {
-  overflow: auto;
-  width: 60vmin;
-  height: 100vmin;
+  display: block;
+  width: 30vmin;
+  height: 50vmin;
 }
 
 .post p {
@@ -41,6 +41,7 @@
 
 .post a {
   color: white;
+  z-index: 3;
 }
 
 .post a:hover {
@@ -50,6 +51,15 @@
 .post h2 {
   padding: 0;
   margin: 0;
+}
+
+.cover-link { 
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .post .post-brief {
