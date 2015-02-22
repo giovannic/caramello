@@ -25,36 +25,45 @@
   text-align: center;
 }
 
-.icon {
+.icon-container {
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.icon(@img) {
+  background: url("../images/icons/@{img}") no-repeat center center;
+  background-size: 100%;
   padding-bottom: 100%;
 }
 
-.home-icon {
-  background: url('../images/logo.png') no-repeat center center;
+.brand-icon {
+  background: url("../images/logo.png") no-repeat center center;
   background-size: 100%;
+  padding-bottom: 40%;
 }
 
 .speakeasy-icon {
-  background: url('../images/icons/speakeasy.gif') no-repeat;
-  background-size: 100%;
+  .icon('speakeasy.gif')
 }
 
 .cartel-icon {
-  background: url('../images/icons/cartel.gif') no-repeat;
-  background-size: 100%;
+  .icon('cartel.gif')
 }
 
 .nightlife-icon {
-  background: url('../images/icons/nightlife.gif') no-repeat;
-  background-size: 100%;
+  .icon('nightlife.gif')
 }
 
 .artwork-icon {
-  background: url('../images/icons/artwork.gif') no-repeat;
-  background-size: 100%;
+  .icon('artwork.gif')
 }
 
 .sounds-icon {
-  background: url('../images/icons/sounds.gif') no-repeat;
-  background-size: 100%;
+  .icon('sounds.gif')
+}
+
+.joinus-icon {
+  .icon('joinus.gif')
 }

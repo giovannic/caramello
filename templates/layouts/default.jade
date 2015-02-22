@@ -49,6 +49,7 @@ html
         a(href='/keystone/signin') Sign In
       div(role="navigation").navbar.navbar-default
         .container-fluid
+          div(class='brand-icon col-xs-12')
           .navbar-header
             button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
               span.sr-only Toggle navigation
@@ -56,10 +57,11 @@ html
               span.icon-bar
               span.icon-bar
 
+
           .collapse.navbar-collapse
-            ul.nav.navbar-nav.col-xs-12
+            ul.nav.navbar-nav.col-xs-12.row-fluid
               each link in navLinks
-                li(class=(section == link.key ? 'active' : null) class='col-xs-2')
+                li(class=(section == link.key ? 'active' : null) class='col-xs-2 icon-container')
                   a(href=link.href)
                     div(class=link.key + '-icon icon')
                     p(class="icon-text")=link.label
