@@ -35,3 +35,6 @@ art
 
 # Bower
 public/bower_components
+
+# environment variables
+env.sh
