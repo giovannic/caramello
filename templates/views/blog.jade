@@ -3,7 +3,7 @@ extends ../layouts/default
 mixin post(post)
   .post(href='/blog/post/' + post.slug, data-ks-editable=editable(user, { list: 'Post', id: post.id }))
     if post.image.exists
-      img(src=post._.image.src()).post-image
+      img(src=post._.image.fit(300,300)).post-image
     .post-brief
       p!= post.content.brief
     .post-summary-container

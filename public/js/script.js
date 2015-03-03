@@ -5,6 +5,7 @@ var msnry;
 imagesLoaded( container, function() {
   msnry = new Masonry(container, {
     columnWidth: 200,
-    itemSelector: '.post'
+    itemSelector: '.post',
+    gutter: 10
   });
 });
