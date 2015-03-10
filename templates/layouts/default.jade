@@ -65,7 +65,7 @@ html
               each link in navLinks
                 li(class=(section == link.key ? 'active' : null) class='col-xs-2 icon-container')
                   a(href=link.href)
-                    div(class=link.key + '-icon icon')
+                    img(src="/images/icons/" + link.key + '.png').icon
                     p(class="icon-text")=link.label
 
     //- BODY
